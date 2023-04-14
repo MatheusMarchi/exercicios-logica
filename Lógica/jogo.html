@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pular() {
+        document.write("<br><br>")
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pular();
+    }
+     var numeroPensado = 2;
+
+     var tentativas = 1;
+     while(tentativas <= 3) {
+        var chute = parseInt(prompt("DIgite o seu chute!"));
+
+        if(chute==numeroPensado) {
+            mostra("Você ACERTOU!, o número pensado era: " + numeroPensado);
+            break;
+        } else {
+            mostra("Você ERROU!");
+        }
+        tentativas++;
+     }
+     
+     mostra("FIM.")
+    
+</script>
